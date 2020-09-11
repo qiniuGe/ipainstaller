@@ -1,8 +1,10 @@
 export TARGET_CODESIGN_FLAGS="-Ssign.plist"
-export ARCHS = armv7 arm64
-export TARGET=iphone:11.2:4.0
+export ARCHS = arm64
+export TARGET=iphone:11.2:10.0
+SYSROOT=$(THEOS)/sdks/iPhoneOS11.2.sdk
+
 GO_EASY_ON_ME=1
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 TOOL_NAME = ipainstaller
 ipainstaller_FILES = \
@@ -18,7 +20,7 @@ ipainstaller_PRIVATE_FRAMEWORKS = GraphicsServices MobileCoreServices
 ipainstaller_LDFLAGS = MobileInstallation -lz
 ipainstaller_INSTALL_PATH = /usr/bin
 
-include theos/makefiles/tool.mk
+include $(THEOS)/makefiles/tool.mk
 
 VERSION.INC_BUILD_NUMBER = 1
 
