@@ -1,5 +1,11 @@
 IPA Installer Console
 =============
+
+[Update] This works for iOS 14.3.
+
+Extract IPA using -B option
+
+-----------------------------------
 Requires iOS 4.0 or above
 
 Check the releases page for the deb file. This was tested working on iOS 13.5 for arm64 devices.
