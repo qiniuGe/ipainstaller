@@ -1,5 +1,11 @@
 IPA Installer Console
 =============
+1 Mac电脑提前安装好theos；
+2 download工程，解压 cd ipainstaller-master；
+3 make package 完成后在该目录多出packages文件夹，deb在里面；
+4 越狱机
+
+
 
 [Update] This works for iOS 14.3.
 
