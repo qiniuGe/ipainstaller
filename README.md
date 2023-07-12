@@ -1,15 +1,25 @@
 IPA Installer Console
 =============
 
-1 Mac电脑提前安装好theos;\n
-2 download工程，解压 cd ipainstaller-master;\n
-3 make package 完成后在该目录多出packages文件夹，deb在里面;\n
-4 ssh连接越狱机:\n
-ssh root@192.168.2.123 \n
-alpine\n
-5 deb copy到越狱机var/root目录下;\n
-6 iPhone:~ root# dpkg -i com.autopear.installipa_3.4.1-1+debug_iphoneos-arm.deb,执行成功越狱机路径下出现：/usr/bin/installipa;\n
+1 Mac电脑提前安装好theos;  
+
+2 download工程，解压 cd ipainstaller-master;  
+
+3 make package 完成后在该目录多出packages文件夹，deb在里面;  
+
+4 ssh连接越狱机:  
+
+ssh root@192.168.2.123   
+
+alpine  
+
+5 deb copy到越狱机var/root目录下;  
+
+6 iPhone:~ root# dpkg -i com.autopear.installipa_3.4.1-1+debug_iphoneos-arm.deb,执行成功越狱机路径下出现：/usr/bin/installipa;  
+
 7 测试：iPhone:~ root# installipa /var/mobile/Applications/4476654971728285.ipa.
+
+
 
 
 
